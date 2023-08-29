@@ -1,10 +1,27 @@
+import { shoe8 } from "../assets/images";
+import Button from "../components/Button";
 
 const SuperQuality = () => {
   return (
-    <div>
-      SuperQuality
-    </div>
-  )
-}
+    <section id="about-us" className="max-container flex justify-between items-center gap-10 max-lg:flex-col w-full">
+      <div className="flex flex-1 flex-col">
+        <h2 className="text-4xl font-bold font-palanquin lg:max-w-lg">
+          We Provide You <span className="text-coral-red">Super Quality</span> Shoes
+        </h2>
+        <p className="lg:max-w-lg info-text mt-4">
+        Ensuring premium comfort and style, our meticulously crafted footwear is designed to elevate your experience, providing you with unmatched quality, innovation, and a touch of elegance. <br /><br />
 
-export default SuperQuality
+        Our dedication to detail and excellence ensures your satisfaction
+        </p>
+        <div className="mt-8">
+          <Button label="View Details"/>
+        </div>
+      </div>
+      <div className="flex flex-1 justify-center items-center">
+        <img src={shoe8} alt="shoe8" width={570} height={522} className="object-contain"/>
+      </div>
+    </section>
+  );
+};
+
+export default SuperQuality;
